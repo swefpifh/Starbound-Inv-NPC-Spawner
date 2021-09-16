@@ -21,7 +21,7 @@
     }
   ],
 
-  "scripts" : [ "/objects/spawner/sgNPCspawner.lua" ],
+  "scripts" : [ "/objects/spawner/swefNPCspawner.lua" ],
   "scriptDelta" : 10,
 
   "animation" : "invisiblemonsterspawner.animation",
