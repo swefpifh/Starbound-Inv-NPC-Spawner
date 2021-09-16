@@ -1,0 +1,51 @@
+{
+  "objectName" : "sgInvisibleNpcSpawner",
+  "colonyTags" : ["misc"],
+  "printable" : false,
+  "rarity" : "uncommon",
+  "price" : 0,
+  "health" : 0.5,
+  "shortdescription" : "Spawner - NPC",
+  "category" : "Invisible NPC Spawner",
+  "description" : "Spawn Num: Infinite\nMonsters: Replicators\nActivation: Wire\nThreat: 3 > 10",
+  "race" : "generic",
+
+  "smashOnBreak" : true,
+
+  "inventoryIcon" : "invisibleNpcSpawner.png",
+  "orientations" : [
+    {
+      "image" : "invisiblemonsterspawner.png",
+      "imagePosition" : [-8, 0],
+      "spaceScan" : 0.1
+    }
+  ],
+
+  "scripts" : [ "/objects/spawner/sgNPCspawner.lua" ],
+  "scriptDelta" : 10,
+
+  "animation" : "invisiblemonsterspawner.animation",
+
+  "animationParts" : {
+    "switch" : "invisiblemonsterspawnerhidden.png"
+  },
+  "animationPosition" : [-8, 0],
+
+  "inputNodes" : [ [-1, 1] ],
+
+  "spawner" : {
+	"npcSpecies" : ["human"], //Race of NPCs. You can use multiple race, ex: ["human", "avian", etc]
+	"npcType" : ["foundryguard"], //ID of NPC to spawn. You can spawn multiple NPC in the list, ex:["npc01", "npc02", etc]
+	
+	"npcThreatLevelmin" : 1, //Select the minimum and maximum threat level. This will generate a selection in the min and max interval. ex: min:1, max:3, your npc will be able to spawn randomly with a threat level 1, 2 or 3.
+	"npcThreatLevelmax" : 6,//If you write 0 in both cases, or if you enter a number in the maximum value that is lower than the minimum value, the level will adapt to the instance.
+	
+    "position" : [0, 0.5], //relative position to spawn at
+    "positionVariance" : [10, 0], //[x,y] size of randomized spawn area, centered on position
+	
+    "stock" : -1, //total number of spawns, -1 for infinite
+	"frequency" : [2.0, 5.0], //cooldown time between spawns (random within range)
+    "trigger" : "wire", //options include "wire", "interact", "break", null (periodic)
+    "outOfSight" : false //only spawn where the player can't see
+  }
+}
