@@ -4,7 +4,7 @@ INFORMATIONS :
 
 ♦ Compatibility with v1.4.4
 
-♦ Steam page : https://steamcommunity.com/sharedfiles/filedetails/?id=###########
+♦ Steam page : https://steamcommunity.com/sharedfiles/filedetails/?id=2603796718
 
 **∴ Open the "invisibleNpcSpawner.object" file and modifiy informations by yours :**
 
