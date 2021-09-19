@@ -7,7 +7,7 @@
   "health" : 0.5,
   "shortdescription" : "swefSpawner - NPC",
   "category" : "Invisible NPC Spawner",
-  "description" : "Spawn Num: Infinite\nMonsters: Replicators\nActivation: Wire\nThreat: 3 > 10",
+  "description" : "Spawn Num: Infinite\nNPCs: Foundry Guard\nActivation: Wire\nThreat: 1 > 6",
   "race" : "generic",
 
   "smashOnBreak" : true,
