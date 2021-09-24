@@ -57,7 +57,7 @@ function spawn()
 	  local npcThreatLevelmin
 	  local npcThreatLevelmax
 	  local npcThreatLevel
-	  local npcSeed = math.random(1,100)
+	  local npcSeed = math.randomseed(util.seedTime())
 	  
       if self.npcThreatLevelmin < 1 and self.npcThreatLevelmax < 1 then
 		npcThreatLevel = world.threatLevel()
